@@ -1,0 +1,94 @@
+
+  .background-frame {
+    position: absolute;
+    flex-wrap: wrap;
+    overflow-y:auto;
+    width: calc( 100% - 279px);
+    height: calc( 100% - 52px);
+    left: 255px;
+    top: 25px;
+    background: #ffffff;
+    border-radius: 71px;
+  }
+  .background-frame-content {
+  
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 90vh;
+    /* margin-left: 90px; */
+    margin-right: 0px;
+    /* top: 20px;
+    left: 50px; */
+  }
+  
+
+.navigation-btn {
+    width: 270px;
+    height: 58px;
+   
+    background-color: #337f5b;
+    border: none;
+    border-radius: 29px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 13px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation-btn.active {
+    width: 270px;
+    display: flex;
+    height: 58px;
+    background: #ffffff;
+    border: none;
+    border-radius: 29px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 13px;
+    color: black;
+    position: relative;
+  }
+  
+  .navigation-btn.active::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 26px;
+    width: 30px;
+    height: 30px;
+    background-color: #337f5b;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #ffffff;
+    border: none;
+  }
+  
+  .navigation-btn.active::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 26px;
+    width: 30px;
+    height: 30px;
+    background-color: #337f5b;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #ffffff;
+  }
+  
+  .navigation-btn:hover {
+    cursor: pointer;
+  }
+  
+  .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ffd062;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin-right: 11px;
+  }
+      

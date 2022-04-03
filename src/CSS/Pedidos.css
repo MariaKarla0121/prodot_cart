@@ -1,0 +1,33 @@
+.lne1 {
+    position: relative;
+    width: 45px;
+  
+    height: 0px;
+    margin-left: 250%;
+    top: -15px;
+  
+    border: 2px solid #337f5b;
+    transform: rotate(-90deg);
+  }
+  .lne2 {
+      position: relative;
+      width: 45px;
+    
+      height: 0px;
+      margin-left: 180%;
+      top: -15px;
+    
+      border: 2px solid #337f5b;
+      transform: rotate(-90deg);
+    }
+    .lne3 {
+      position: relative;
+      width: 45px;
+    
+      height: 0px;
+      margin-left: 250%;
+      top: -15px;
+    
+      border: 2px solid #337f5b;
+      transform: rotate(-90deg);
+    }

@@ -1,0 +1,36 @@
+.Tabs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+      margin-bottom: 3px;
+      min-width: 100%;
+      margin-top: 20px;
+    }
+    
+    .Tabs__Tab {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+     
+    
+      display: inline-block;
+      font-size: 18px;
+      background: #fff;
+      color: #000;
+      cursor: pointer;
+      padding: 0.5rem 4rem 0.5rem 4rem;
+      transition: 500ms;
+    }
+    
+    .Tabs__Tab :hover,
+    .Tabs__Tab--active {
+      background: #337f5b;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      color: #ffd062;
+      border-radius: 14px;
+    }
+    
