@@ -34,12 +34,22 @@ const Personalizar_app = () => {
           <div>
             <Logo />
           </div>
-          <div style={{ marginTop: "20px", marginRight: "30%" }}>
-            <h2>Selecionar Idioma</h2>
-            <Lenguaje />
+          <div
+            style={{
+              marginTop: "20px",
+              marginRight: "30%",
+              
+              fontFamily: "Roboto",
+              fontWeight: "bold",
+              fontSize: "16px",
+              color: "#000000",
+            }}
+          >
+            Selecionar Idioma
+            <Lenguaje style={{marginTop:"20px"}} />
           </div>
         </div>
-        <h2 style={{ marginTop: "40px", fontSize: "20px" }}>Color</h2>
+        <h2 style={{ marginTop: "40px", fontSize: "20px",fontWeight:"700" }}>Color</h2>
         <div
           style={{
             display: "flex",
@@ -55,16 +65,16 @@ const Personalizar_app = () => {
               flexWrap: "wrap",
             }}
           >
-            <div className="selector_primario">
-              <p>Color Primario</p>
+            <div style={{fontWeight:"400",fontSize:"14px"}}>
+              Color Primario
               <Color_extra />
             </div>
-            <div className="selector_secundario">
-              <p>Color Secundario</p>
+            <div style={{fontWeight:"400",fontSize:"14px"}}>
+              Color Secundario
               <Color_extra />
             </div>
-            <div className="selector_terciaro">
-              <p>Color Tipografico</p>
+            <div style={{fontWeight:"400",fontSize:"14px"}}>
+              Color Tipografico
               <Color_extra />
             </div>
           </div>
@@ -72,11 +82,10 @@ const Personalizar_app = () => {
         <div
           style={{
             display: "flex",
-            marginTop: "20px",
+            marginTop: "50px",
             flexDirection: "column",
             fontSize: "20px",
             fontWeight: "bold",
-            
           }}
         >
           Informacion del Contacto

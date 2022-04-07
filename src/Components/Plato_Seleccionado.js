@@ -38,16 +38,22 @@ const Plato_Seleccionado = () => {
 
   return (
     <div className="gen">
-      <div style={{display:"flex",flexDirection:"column",gap:".5rem",alignContent:"flex-start"}}>
-        {
-          object.map((data,index)=>(<Card
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: ".5rem",
+          alignContent: "flex-start",
+        }}
+      >
+        {object.map((data, index) => (
+          <Card
             img={data.img}
             title={data.title}
             price={data.price}
             lol={mostrarModal}
-          />))
-        }
-
+          />
+        ))}
       </div>
       {show && (
         <Seleccion
@@ -63,15 +69,38 @@ const Plato_Seleccionado = () => {
 function Card(props) {
   return (
     <div
-      style={{display:"flex",boxShadow:" 0px 4px 4px rgba(0, 0, 0, 0.25)",borderRadius:"13px",width:"40%",height:"57px"}}
+      style={{
+        display: "flex",
+        boxShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)",
+        borderRadius: "13px",
+        width: "40%",
+        height: "57px",
+      }}
       onClick={() => {
         props.lol(props.title);
       }}
     >
-      <img src={props.img} style={{width:"57px",height:"57px",background:"#323232",borderRadius:"12px",objectFit:"cover"}}/>
-      <div style={{margin:"1rem"}}>
-        <h2 style={{fontFamily:"Roboto",fontSize:"16px",fontWeight:"bold"}}>{props.title}</h2>
-        <h3 style={{fontFamily:"Roboto",fontSize:"14px",fontWeight:"bold"}}>{props.price}</h3>
+      <img
+        src={props.img}
+        style={{
+          width: "57px",
+          height: "57px",
+          background: "#323232",
+          borderRadius: "12px",
+          objectFit: "cover",
+        }}
+      />
+      <div style={{ margin: "1rem" }}>
+        <h2
+          style={{ fontFamily: "Roboto", fontSize: "16px", fontWeight: "bold" }}
+        >
+          {props.title}
+        </h2>
+        <h3
+          style={{ fontFamily: "Roboto", fontSize: "14px", fontWeight: "bold" }}
+        >
+          {props.price}
+        </h3>
       </div>
     </div>
   );

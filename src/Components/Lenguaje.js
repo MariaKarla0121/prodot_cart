@@ -11,7 +11,7 @@ const transitions ={
 const Lenguaje = () => {
     const [lenguaje, setLenguaje] = useState(initialLenguaje);
   return (
-      <div>
+      <div style={{marginTop:"15px"}}>
           <select>
               <option value="es">ES</option>
               <option value="en">EN</option>

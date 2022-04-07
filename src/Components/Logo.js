@@ -19,9 +19,11 @@ export default function Logo() {
   }, [image]);
 
   return (
-    <div style={{display:"flex"}}>
+    <div style={{ display: "flex" }}>
       <form>
-        <h2 style={{marginTop:"20px",fontWeight:"bold",fontSize:"18px"}}>Logotipo</h2>
+        <h2 style={{ marginTop: "20px", fontWeight: "bold", fontSize: "18px" }}>
+          Logotipo
+        </h2>
         <div
           onClick={(event) => {
             event.preventDefault();
@@ -37,10 +39,20 @@ export default function Logo() {
             cursor: "pointer",
           }}
         >
-          <img src={preview} style={{ objectFit: "cover" }} />
+          <img
+            src={preview}
+            style={{
+              width: "100px",
+              objectFit: "cover",
+              height: "100px",
+              borderRadius: "20px",
+              cursor: "pointer",
+            }}
+          />
           <p
             style={{
-              margin: "-85px 0 0 35px ",
+              margin: "-90px 0 0 35px ",
+
               fontSize: "50px",
               color: "white",
             }}

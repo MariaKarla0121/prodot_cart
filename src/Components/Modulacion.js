@@ -19,9 +19,18 @@ export default function Modulacion() {
   }, [image]);
 
   return (
-    <div style={{display:"flex"}}>
+    <div style={{ display: "flex" }}>
       <form>
-        <h2 style={{marginTop:"5px",fontFamily:"Roboto",fontSize:"15px",fontWeight:"bold"}}>Cambiar foto</h2>
+        <h2
+          style={{
+            marginTop: "5px",
+            fontFamily: "Roboto",
+            fontSize: "15px",
+            fontWeight: "bold",
+          }}
+        >
+          Cambiar foto
+        </h2>
         <div
           onClick={(event) => {
             event.preventDefault();
@@ -37,12 +46,23 @@ export default function Modulacion() {
             cursor: "pointer",
           }}
         >
-          <img src={preview} style={{ objectFit: "cover" }} />
+          <img
+            src={preview}
+            style={{
+              width: "100px",
+              objectFit: "cover",
+              height: "100px",
+              borderRadius: "20px",
+              border:"none",
+              cursor: "pointer",
+            }}
+          />
           <p
             style={{
               margin: "-85px 0 0 30px ",
               fontSize: "50px",
               color: "white",
+
             }}
           >
             +
@@ -79,7 +99,7 @@ export default function Modulacion() {
         </p>
       </form>
 
-      <div>
+      <div style={{display:"flex",flexDirection:"column",margin:"auto",padding:"20px",justifyContent:"space-around"}}>
         <p>Nombre del Producto</p>
         <input placeholder="Batido de frutas"></input>
 
