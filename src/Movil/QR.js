@@ -1,6 +1,6 @@
 import React from "react";
 import Test from "./ComponenteMovil/Escaneo";
-import Escaneo from './ComponenteMovil/Escaneo'
+import Escaneo from "./ComponenteMovil/Escaneo";
 const QR = () => {
   return (
     <div
@@ -19,12 +19,76 @@ const QR = () => {
           fontWeight: "700",
           margin: "0 auto",
           color: "#FFFFFF",
-          textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"
+          textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
         }}
       >
         LOGO
       </div>
-      <div><Test/></div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "252px",
+          height: "252px",
+          margin: "auto",
+        }}
+      >
+        <Test />
+      </div>
+      <div
+        style={{
+          display: "flex",
+
+          flexDirection: "column",
+          color: "white",
+          marginTop: "auto",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            marginBottom: "15px",
+          }}
+        >
+          <div>
+            <div>Restaurant Name</div>
+            <div>Restaurant Name</div>
+          </div>
+          <div>
+            <div>Restaurant Name</div>
+            <div>Restaurant Name</div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            background: "white",
+            boxShadow: "0px -4px 18px rgba(0, 0, 0, 0.25)",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              color: "black",
+            }}
+          >
+            <div>manolito@gmail.com</div>
+            <div>Numero</div>
+          </div>
+          <div
+            style={{
+              fontWeight: "700",
+              fontSize: "18px",
+              textAlign: "center",
+              color: "black",
+            }}
+          >
+            ofrecido por
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

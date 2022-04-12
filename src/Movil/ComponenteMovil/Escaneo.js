@@ -1,11 +1,11 @@
 /*eslint-disable*/
 import React, { useEffect, useState } from "react";
-import {QrReader} from "react-qr-reader";
+import QrReader from 'react-qr-reader'
 import { Redirect } from "react-router";
 
 // import QrReader from 'react-qr-scanner'
 
-const Test = () => {
+const Escaneo = () => {
   const [res, setRes] = useState(null);
   const [shot, setShot] = useState(false);
   const [errorMesa, setErrorMesa] = useState(false);
@@ -49,10 +49,10 @@ const Test = () => {
   // }
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       <QrReader
         delay={300}
-        style={{ width: "100%" }}
+        style={{ with: "100%" }}
         onError={handleError}
         onScan={handleScan}
       />
@@ -63,4 +63,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Escaneo;
